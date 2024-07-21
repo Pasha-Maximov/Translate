@@ -1,0 +1,108 @@
+import turtle
+screen = turtle.Screen()
+screen.bgcolor("black")
+paper = turtle.Turtle()
+paper.color("white")
+paper.pensize(2)
+paper.speed(8)
+
+import math
+
+def draw_ellipse(center_x, center_y, radius_x, radius_y, angle, extent=360):
+    paper.penup()
+    paper.goto(center_x + radius_x * math.cos(math.radians(angle)), center_y + radius_x * math.sin(math.radians(angle)))
+    paper.pendown()
+
+    for theta in range(int(extent) + 1):
+        rad = math.radians(theta)
+        x = radius_x * math.cos(rad)
+        y = radius_y * math.sin(rad)
+        x_rotated = x * math.cos(math.radians(angle)) - y * math.sin(math.radians(angle))
+        y_rotated = x * math.sin(math.radians(angle)) + y * math.cos(math.radians(angle))
+        paper.goto(center_x + x_rotated, center_y + y_rotated)
+
+
+
+
+
+
+
+input= input
+print ("What do you want drawn?")
+print ("1) Daisy")
+print ("2) _____")
+print ("3) _____")
+print ("4) _____")
+print ("if you would not like an object to be drawn or do not want to continue/want to exit, please input no or exit.")
+print (input)
+
+if input !=("∆" or "1" or "daisy"):
+    print ("please select one of the given options.")
+    print (input)
+
+if input ("■" or "no" or "exit"):
+    exit
+
+if input ("∆" or "1" or "daisy"):
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+if input ("∆" or "2" or "tsunami scene"):
+    paper.penup()
+    paper.goto(-250, 100)
+    paper.pendown()
+    paper.right(90)
+    paper.forward(10)
+    paper.circle(50, 30)
+
+
+
+
+paper.hideturtle()
+
+turtle.done()
+
+
+print ("do you want another one to be drawn? If so, select another option.")
+print ("1) Daisy")
+print ("2) _____")
+print ("3) _____")
+print ("4) _____")
+print ("if you would not like an object to be drawn or do not want to continue/want to exit, please input no or exit.")
+print (input)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
